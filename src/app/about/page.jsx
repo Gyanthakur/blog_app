@@ -11,7 +11,7 @@ const AboutPage = () => {
           We create digital ideas that are bigger, bolder, braver and better.
         </h1>
         <p className={styles.desc}>
-        We create digital ideas that are bigger, bolder, braver and better. We belive in good ideas flexibility and precission We are worls's Our Special Team best consulting & finance solution provider. Wide range of web and software development service.
+        We create digital ideas that are bigger, bolder, braver and better. We belive in good ideas flexibility and precission We are world`&apos;`s Our Special Team best consulting & finance solution provider. Wide range of web and software development service.
         </p>
 
         <div className={styles.boxes}>
