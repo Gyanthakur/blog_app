@@ -1,8 +1,13 @@
+"use client"
+import styles from "./footer.module.css"
+
 const Footer = () => {
   return (
-    <footer className="footer">
-      <p>Footer</p>
-    </footer>
+   <div className={styles.container}>
+    <div className={styles.logo}>gps_Blog</div>
+    <div className={styles.text}>gps_blog creative thoughts agency  &#169; All rights reserved. </div>
+
+   </div>
   )
 }
 

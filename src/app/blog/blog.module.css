@@ -1,0 +1,31 @@
+.container{
+    width: 100%;
+    scroll-behavior: auto;
+    scrollbar-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+.post{
+    margin: auto;
+    width: 30%;
+}
+
+@media screen and (max-width: 1080px)
+{
+    .post{
+        width: 45%;
+    }
+}
+/* @media screen and (max-width: 1959px)
+{
+    .post{
+        width: 31%;
+    }
+} */
+@media screen and (max-width: 786px)
+{
+    .post{
+        width:100% ;
+    }
+}
