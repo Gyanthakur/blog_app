@@ -16,15 +16,15 @@ const AboutPage = () => {
 
         <div className={styles.boxes}>
           <div className={styles.box}>
-            <h1>02 k+</h1>
+            <h1>02</h1>
             <p>Year of experience</p>
           </div>
           <div className={styles.box}>
-            <h1>02 k+</h1>
+            <h1>02</h1>
             <p>Year of experience</p>
           </div>
           <div className={styles.box}>
-            <h1>02 k+</h1>
+            <h1>02</h1>
             <p>Year of experience</p>
           </div>
         </div>
