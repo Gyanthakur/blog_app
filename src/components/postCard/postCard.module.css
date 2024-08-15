@@ -41,4 +41,10 @@
 
 .link{
     text-decoration: underline;
+    color: chartreuse;
+}
+
+.link:hover{
+    color: rgb(162, 213, 80);
+    font-weight: 400;
 }
