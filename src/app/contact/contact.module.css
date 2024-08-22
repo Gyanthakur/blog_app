@@ -43,9 +43,12 @@
     cursor: pointer;
 }
 
-@media(max-width: 768px)
-{
+
+@media(max-width: 568px){
     .container{
         flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    
     }
 }
