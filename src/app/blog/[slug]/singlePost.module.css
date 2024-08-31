@@ -31,11 +31,7 @@
 }
 
 
-.avatar{
-    object-fit: cover;
-    border-radius: 50%;
 
-}
 
 .detailText{
     display: flex;
