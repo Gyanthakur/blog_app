@@ -1,6 +1,6 @@
 
 import { handleGithubLogin } from "@/lib/action";
-import { auth, signIn } from "@/lib/auth";
+// import { auth, signIn } from "@/lib/auth";
 
 
 const LoginPage = async () => {
@@ -10,7 +10,7 @@ const LoginPage = async () => {
   // console.log(session);
 
 
-  
+
 
 
     return (

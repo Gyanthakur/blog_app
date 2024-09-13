@@ -1,11 +1,11 @@
-const { sayHello, addPost, deletePost } = require("@/lib/action")
+const { addPost, deletePost } = require("@/lib/action")
 
 const ServerActionTestPage = () => {
 
-    const actionInComponent = async () => {
-        "use server";
-        console.log("It's Works in own components");
-    }
+    // const actionInComponent = async () => {
+    //     "use server";
+    //     console.log("It's Works in own components");
+    // }
     return (
         <div>
             <form action={addPost}>

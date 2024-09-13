@@ -49,7 +49,7 @@ export const getUser = async (id) => {
 		return user;
 	} catch (err) {
 		console.log(err);
-		  throw new Error("Failed to fetch user!");
+		throw new Error("Failed to fetch user!");
 	}
 };
 
