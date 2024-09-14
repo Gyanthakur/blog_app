@@ -107,28 +107,48 @@ export const register = async (previousState,formData) => {
 	}
 };
 
-export const login = async (prevState, formData) => {
-	const { username, password } = Object.fromEntries(formData);
+// export const login = async (prevState, formData) => {
+// 	const { username, password } = Object.fromEntries(formData);
 
 	
+// 	try {
+// 		connectToDb();
+// 		await signIn("credentials", {
+// 			username,
+// 			password,
+// 		});
+// 		console.log("saved to db")
+// 		return {success : true};
+
+		
+// 	} catch (err) {
+// 		console.log(err);
+
+// 		if(err.message.includes("CredentialsSignin"))
+// 		{
+// 			return {error: "Invalid username or password"}
+// 		}
+		
+		
+// 		return { error: "Failed to Login ! Or user not found!" };
+// 		// throw err;
+// 	}
+// };
+
+
+
+export const login = async (prevState, formData) => {
+	const { username, password } = Object.fromEntries(formData);
+  
 	try {
-		// connectToDb();
-		await signIn("credentials", {
-			username,
-			password,
-		});
-
-		
+	  await signIn("credentials", { username, password });
 	} catch (err) {
-		console.log(err);
-
-		// if(error.message.includes("NEXT_REDIRECT"))
-		// {
-		// 	return {error: "Invalid username or password"}
-		// }
-		
-		
-		return { error: "Failed to Login ! Or user not found!" };
-		// throw err;
+	  console.log(err);
+	  return {success: true};
+  
+	  if (err.message.includes("CredentialsSignin")) {
+		return { error: "Invalid username or password" };
+	  }
+	  throw err;
 	}
-};
+  };

@@ -29,7 +29,7 @@
 	border-radius: 5px;
     outline: none;
     border: none;
-    background-color: var(--bgSoft);
+    background-color: var(--bgsoft);
     color: var(--text);
 }
 
