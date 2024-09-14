@@ -1,0 +1,19 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* height: 100vh; */
+	/* background-color: var(--bg); */
+}
+
+.wrapper {
+	width: 500px;
+	background-color: var(--bgsoft);
+	/* background-color: rgb(15, 23, 41); */
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 30px;
+	border-radius: 5px;
+}

@@ -1,0 +1,66 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* height: 100vh; */
+	/* background-color: var(--bg); */
+}
+
+.wrapper {
+	width: 500px;
+	background-color: var(--bgsoft);
+	/* background-color: rgb(15, 23, 41); */
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 30px;
+	border-radius: 5px;
+}
+
+
+
+.form {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 30px;
+}
+
+.form input {
+	padding: 20px;
+	background-color: var(--bg);
+	color: var(--textColor);
+	border-radius: 5px;
+}
+
+.form button {
+	padding: 20px;
+	cursor: pointer;
+	background-color: var(--btn);
+	color: var(--textColor);
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+}
+.formGithub {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	/* gap: 30px; */
+    margin-bottom:  15px;
+}
+
+
+
+.formGithub button {
+    padding: 20px;
+	cursor: pointer;
+	background-color: rgb(3, 2, 21);
+	color: var(--textColor);
+	font-weight: bold;
+    /* border: 1px solid blue; */
+    border-bottom: 1px solid blue;
+    border-right: 1px solid blue;
+	border-radius: 5px;
+}
