@@ -1,6 +1,6 @@
 import PostCard from "@/components/postCard/postCard";
 import styles from "./blog.module.css";
-import AdminPostForm from "@/components/adminPostForm/adminPostForm";
+// import AdminPostForm from "@/components/adminPostForm/adminPostForm";
 import AddPostByUser from "@/components/addPostbyUser/addPostByUser";
 import { Suspense } from "react";
 import { auth } from "@/lib/auth";

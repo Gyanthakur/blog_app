@@ -53,18 +53,17 @@ export const getPost = async (slug) => {
 // 	}
 // };
 
-
 export const getUser = async (slug) => {
 	noStore();
 	try {
-	  connectToDb();
-	  const user = await User.findById(slug);
-	  return user;
+		connectToDb();
+		const user = await User.findById(slug);
+		return user;
 	} catch (err) {
-	  console.log(err);
-	  throw new Error("Failed to fetch user!");
+		console.log(err);
+		throw new Error("Failed to fetch user!");
 	}
-  };
+};
 
 export const getUsers = async () => {
 	try {
