@@ -8,7 +8,7 @@ const PostCard = ({ post }) => {
 				{post.img && <div className={styles.imgConatiner}>
 					<Image
 						className={styles.img}
-						src={post.img}
+						src={post.img ? post.img : "/noavatar.png"}
 						alt="img err post"
 						fill
 					/>

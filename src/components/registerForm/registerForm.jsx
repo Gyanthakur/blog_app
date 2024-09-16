@@ -13,7 +13,7 @@ const RegisterForm = () => {
 	const [state, formAction] = useFormState(register, undefined);
 	const router = useRouter();
 	useEffect(() => {
-		state?.success && router.push("/login");
+		state?.success && router.push("/");
 	}, [state?.success, router]);
 	return (
 		<form className={styles.form} action={formAction}>
@@ -25,6 +25,7 @@ const RegisterForm = () => {
 				placeholder="Password again"
 				name="passwordRepeat"
 			/>
+			<input type="text" placeholder="Profile Image URL" name="img" />
 			<button>Register</button>
 
 			{state?.error}

@@ -11,6 +11,18 @@
     width: 30%;
 }
 
+
+
+.blogPost{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    /* background-color: var(-s-bgsoft); */
+    border-radius: 5px;
+    color: var(--textColor);
+}
+
 @media screen and (max-width: 1080px)
 {
     .post{

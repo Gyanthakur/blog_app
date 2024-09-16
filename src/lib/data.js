@@ -41,17 +41,30 @@ export const getPost = async (slug) => {
 	}
 };
 
-export const getUser = async (id) => {
+// export const getUser = async (id) => {
+// 	noStore();
+// 	try {
+// 		connectToDb();
+// 		const user = await User.findById(id);
+// 		return user;
+// 	} catch (err) {
+// 		console.log(err);
+// 		throw new Error("Failed to fetch user!");
+// 	}
+// };
+
+
+export const getUser = async (slug) => {
 	noStore();
 	try {
-		connectToDb();
-		const user = await User.findById(id);
-		return user;
+	  connectToDb();
+	  const user = await User.findById(slug);
+	  return user;
 	} catch (err) {
-		console.log(err);
-		throw new Error("Failed to fetch user!");
+	  console.log(err);
+	  throw new Error("Failed to fetch user!");
 	}
-};
+  };
 
 export const getUsers = async () => {
 	try {

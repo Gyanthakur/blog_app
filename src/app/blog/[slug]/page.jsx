@@ -14,8 +14,23 @@ import { getPost } from "@/lib/data";
 // 	}
 // 	return res.json();
 // };
+
+
+
+
+
+// const getData = async (slug) => {
+// 	const res = await fetch(`http://localhost:3000/api/blog/${slug}`);
+
+// 	if (!res.ok) {
+// 		throw new Error("Something went wrong");
+// 	}
+// 	return res.json();
+// };
+
+
 const getData = async (slug) => {
-	const res = await fetch(`http://localhost:3000/api/blog/${slug}`);
+	const res = await fetch(`https://blog-app-53.vercel.app/api/blog/${slug}`);
 
 	if (!res.ok) {
 		throw new Error("Something went wrong");
@@ -32,6 +47,7 @@ export const generateMetadata = async({params}) => {
 	return{
 		title: post.title,
 		description: post.desc,
+		// img:"https://images.pexels.com/photos/19589485/pexels-photo-19589485/free-photo-of-a-woman-sitting-on-a-chair-in-front-of-a-restaurant.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
 	};
 };
 

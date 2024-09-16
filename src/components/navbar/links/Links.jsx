@@ -23,6 +23,10 @@ const links = [
 		title: "Blog",
 		path: "/blog",
 	},
+	// {
+	// 	title: "Logout",
+	// 	path: "/login",
+	// },
 ];
 const Links =  ({session}) => {
 	const [open, setOpen] = useState(false);

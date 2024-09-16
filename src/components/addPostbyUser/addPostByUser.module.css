@@ -1,0 +1,31 @@
+.container {
+	display: flex;
+    width: 33%;
+	flex-direction: column;
+	gap: 5px;
+}
+.container h2 {
+    text-align: center;
+    color: chartreuse;
+    /* font-size: large; */
+}
+
+.container input,
+.container textarea,
+.container select {
+	padding: 20px;
+	background-color: var(--bgsoft);
+	border: none;
+	border-radius: 5px;
+	color: var(--textColor);
+}
+
+.container button {
+	padding: 20px;
+	cursor: pointer;
+	background-color: var(--btn);
+	border: none;
+	border-radius: 5px;
+	color: var(--textColor);
+	font-weight: bold;
+}
